@@ -1,11 +1,21 @@
-import 'styles/App.scss';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+import Login from 'src/pages/auth/Login';
+import Main from 'src/pages/main/Main';
 
-function App() {
+const history = createBrowserHistory();
+
+const App = () => {
+
   return (
-    <div>
-      RAS
-    </div>
+    <BrowserRouter>
+				<Routes>
+					<Route path="/" element={<Main />}></Route>
+					<Route path="/login" element={<Login />}></Route>
+				</Routes>
+			</BrowserRouter>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-bottom: 100px;
+}
+
+.loginBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.authBox {
+    margin-bottom: 100px;
+}
+
+input:not([type="submit"]) {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+}

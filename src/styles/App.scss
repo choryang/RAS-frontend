@@ -1,3 +1,8 @@
-div {
-    color: red;
+input:not([type="submit"]) {
+    border: 1px solid #b6b6b6 ;
+    border-radius: 8px;
+}
+
+.divider {
+    margin: 0 10px;
 }
