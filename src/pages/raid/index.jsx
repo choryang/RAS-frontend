@@ -1,9 +1,8 @@
 
-
 function Login() {
   return (
     <div>
-      Main
+      Raid
     </div>
   );
 }
