@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
+import 'src/styles/reset.scss';
 import Login from 'src/pages/auth/Login';
 import Raid from 'src/pages/raid';
 import MyPage from 'src/pages/mypage';
