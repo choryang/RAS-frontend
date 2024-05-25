@@ -1,8 +1,11 @@
+import Header from "src/components/Header";
+
 function MyPage() {
   return (
-    <div>
+    <>
+      <Header />
       My Page
-    </div>
+    </>
   );
 }
 
