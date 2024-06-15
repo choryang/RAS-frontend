@@ -1,0 +1,23 @@
+.itemBox {
+    display: flex;
+    flex-direction: column;
+    min-width: calc(50% - 30px);
+    border: 1px solid #9c9c9c;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+
+    &.itemDesc {
+        display: flex;
+        justify-content: space-between;
+
+    }
+     &.itemInfo {
+        display: flex;
+        justify-content: space-between;
+
+        &.itemName { 
+        }
+
+    }
+}
