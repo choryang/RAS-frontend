@@ -1,22 +1,41 @@
 .itemBox {
     display: flex;
     flex-direction: column;
-    min-width: calc(50% - 30px);
+    min-height: 80px;
+    width: calc(50% - 40px);
     border: 1px solid #9c9c9c;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: none;
     cursor: pointer;
 
-    &.itemDesc {
+    & .itemDesc {
         display: flex;
         justify-content: space-between;
-
+        margin-bottom: 50px;
     }
-     &.itemInfo {
+    & .itemInfo {
         display: flex;
         justify-content: space-between;
+        align-items: baseline;
+        gap: 20px;
 
-        &.itemName { 
+        & .itemName { 
+            display: flex;
+            align-items: baseline;
+
+            & .name {
+                font-size: 24px;
+                font-weight: bold;
+                margin-right: 5px;
+            }
+
+            & .type {
+                font-size: 12px;
+                padding: 5px 10px;
+                border-radius: 15px;
+            }
         }
 
     }

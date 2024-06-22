@@ -19,16 +19,19 @@ function Stat() {
 
 
   return (
+  <>
+    <Header />
     <div className="mainContainer">
-      <Header />
+        <div className="pageTitle">스탯 관리</div>
         <div className="listContainer">
         {statList && statList.map((statItem, index) => {
             return (
-            <StatItem key={index} item={statItem}/>
+              <StatItem key={index} item={statItem}/>
             )
         })}
       </div>
     </div>
+  </>
   );
 }
 
